@@ -61,7 +61,16 @@ Promise.all([Utils.show_banner()]).then(function (values) {
                 logger.info(`(App) called topup API`)
 
                 await page.waitFor(3000);
-                await page.waitFor(Selector.number_owner_selector);
+
+                try {
+                    await page.waitFor(Selector.number_owner_selector, {
+                        timeout: 3000
+                    });
+                } catch (error) {
+                    logger.error(`(App) Timeout <number_owner_selector> wating...`)
+                    process.exit(1)
+                }
+
                 await page.click(Selector.number_owner_selector);
                 logger.info(`(App) topup to owner only`)
 
@@ -84,13 +93,21 @@ Promise.all([Utils.show_banner()]).then(function (values) {
                 logger.info(`(App) send pay action`)
 
                 await page.waitFor(1000);
-                await page.waitFor(Selector.confirm_pay_selector);
+                try {
+                    await page.waitFor(Selector.confirm_pay_selector, {
+                        timeout: 3000
+                    });
+                } catch (error) {
+                    logger.error(`(App) Timeout <confirm_pay_selector> wating...`)
+                    process.exit(1)
+
+                }
+ 
                 await page.click(Selector.confirm_pay_selector);
                 logger.info(`(App) send confirmed action`)
 
-                //await browser.close();
                 logger.info(`(App) Finished topup.`)
-
+                setTimeout(() => { browser.close(); }, 2000);
             })();
 
         });

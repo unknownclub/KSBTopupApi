@@ -40,7 +40,7 @@ class Config {
     get prompt_amount(){
         return {
             properties: {
-              name: {
+              amount: {
                 message: 'Enter your amount to top up (THB)',
                 required: true
               }
@@ -51,7 +51,7 @@ class Config {
     get prompt_otp(){
         return {
             properties: {
-              name: {
+              opt: {
                 message: 'Enter your OTP',
                 required: true
               }
