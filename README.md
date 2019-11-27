@@ -36,9 +36,12 @@ Add Sample Here
 ```
 
 #### How to Run the API
+To run the API you will first need to open a terminal a terminal can be either CMD, Powershell
+or unix terminal and run the following commands.
 ```
-1. "npm install" to cli
-2. "node app.js"
+1. first we begin by executing "npm install" to install all depenancies.
+1.2 npm fix audit if a security vulnerability is detected.
+2. then you may run the app by executing "node app.js"
 
 ```
 ##### Test application
