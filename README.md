@@ -70,7 +70,7 @@ We use [SemVer](http://semver.org/) for versioning. Please visit their website f
 information to understand how different versions might affect you and your project.
 
 ### Authors
-* **Palm** - *Initial Work* - [u n 4 c k n 0 w l 3 z](https://github.com/un4ckn0wl3z)
+* **Anuwat Khongchuai** - *Initial Work* - [u n 4 c k n 0 w l 3 z](https://github.com/un4ckn0wl3z)
 * **Nasar Eddaoui** - *Contributor* - [Nasar Eddaoui](https://github.com/Nasar165)
 
 See also the list of [contributors](https://github.com/un4ckn0wl3z/KSBTopupApi/graphs/contributors) who participated in this project.
