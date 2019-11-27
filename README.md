@@ -1,4 +1,4 @@
-# Kasikorn Cyber Banking Topup Api
+# Kasikorn Cyber Banking Topup API
 KSBT  shortened for Kasikorn cyberbanking mobile top-up API is an unofficial Kasikorn bank 
 API made by enthusiastic programmers that have no ties to Kasikorn bank. 
 The API's purpose is to allow external parties to connect & utilize Kasikorn bank's services
