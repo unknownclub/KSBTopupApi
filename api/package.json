@@ -11,7 +11,7 @@
   "dependencies": {
     "config": "^3.2.4",
     "figlet": "^1.2.4",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "prompt": "^1.0.0",
     "puppeteer": "^2.0.0",
     "winston": "^3.2.1",
